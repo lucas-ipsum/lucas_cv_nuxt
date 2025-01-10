@@ -11,11 +11,15 @@
   },
   "dependencies": {
     "@nuxtjs/strapi": "^2.0.0",
+    "@vesp/nuxt-fontawesome": "^1.1.0",
     "nuxt": "^3.14.1592",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@nuxtjs/tailwindcss": "^6.12.2"
   }
 }

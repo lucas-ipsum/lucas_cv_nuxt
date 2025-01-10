@@ -4,8 +4,7 @@
             <SkillElement :skill="skill"/>
         </div>
     </div>
-
-</template>
+    </template>
 
 <script setup lang="ts">
 import SkillElement from './SkillElement.vue';

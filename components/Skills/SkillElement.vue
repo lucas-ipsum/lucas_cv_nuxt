@@ -1,9 +1,8 @@
 <template>
-    <div class="bg-red-500">
-       {{ skill.title }}
-       {{ skill.level }}
+    <div class="text-lg font-bold text-white grid">
+       <p>{{ skill.title }}</p>
+       {{ typeof skill.level }}
     </div>
-    {{ skill }}
 </template>
 
 <script setup lang="ts">
