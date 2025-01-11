@@ -16,7 +16,8 @@ export default defineNuxtConfig({
   },
   fontawesome: {
     icons: {
-      solid: ['circle']
+      solid: ['circle'],
+      regular: ['circle']
     }
   },
   devtools: { enabled: true }

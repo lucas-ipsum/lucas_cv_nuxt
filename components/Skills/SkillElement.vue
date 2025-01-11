@@ -1,7 +1,15 @@
 <template>
-    <div class="text-lg font-bold text-white grid">
+    <div class="text-lg font-bold text-white grid grid-cols-2">
        <p>{{ skill.title }}</p>
-       {{ typeof skill.level }}
+       <div class="flex gap-1">
+            <span v-for="n in skill.level">
+                <font-awesome :icon="['fas', 'circle']" />
+            </span>
+            <span v-for="n in 5 - skill.level">
+                <font-awesome :icon="['far', 'circle']" />
+            </span>
+       </div>
+
     </div>
 </template>
 
