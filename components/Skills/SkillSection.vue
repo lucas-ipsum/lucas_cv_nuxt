@@ -1,6 +1,5 @@
 <template>
-
-  <div class="flex ">
+  <div class="flex gap-5 flex-wrap">
     <SkillList :skills="programmingLanguages || []" />
     <SkillList :skills="toolsAndFrameworks || []" />
   </div>

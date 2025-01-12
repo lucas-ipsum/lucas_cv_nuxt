@@ -1,5 +1,5 @@
 <template>
-  <div class="outline outline-2 outline-white p-4 rounded-lg w-[400px]">
+  <div class="outline outline-2 outline-white p-4 rounded-lg w-full sm:w-[400px] mx-auto">
     <div v-for="skill in skills">
       <SkillElement :skill="skill" />
     </div>

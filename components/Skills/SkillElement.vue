@@ -1,7 +1,7 @@
 <template>
     <div class="text-lg font-bold text-white grid grid-cols-2">
        <p>{{ skill.title }}</p>
-       <div class="flex gap-1">
+       <div class="flex gap-1 text-[#f97316]">
             <span v-for="n in skill.level">
                 <font-awesome :icon="['fas', 'circle']" />
             </span>
