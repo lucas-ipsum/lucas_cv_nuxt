@@ -1,7 +1,8 @@
 <template>
+  <h2 class="text-center font-bold text-2xl text-white">Programmierkenntnisse</h2>
   <div class="flex gap-5 flex-wrap">
-    <SkillList :skills="programmingLanguages || []" />
-    <SkillList :skills="toolsAndFrameworks || []" />
+    <SkillList title="Sprachen" :skills="programmingLanguages || []" />
+    <SkillList title="Werkzeuge" :skills="toolsAndFrameworks || []" />
   </div>
 </template>
 

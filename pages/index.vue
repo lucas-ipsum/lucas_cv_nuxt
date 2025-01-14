@@ -1,6 +1,6 @@
 <template>
     <div class="justify-center flex">
-        <div class="xl:max-w-[48rem]">
+        <div class="xl:max-w-[56rem]">
             <SkillSection />
         </div>
     </div>
