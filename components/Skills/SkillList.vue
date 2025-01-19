@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto">
     <div
-      class="shadow-md bg-[#052e16] bg-opacity-50 p-4 rounded-lg w-full sm:w-[400px]"
+      class="shadow-md bg-[#052e16] bg-opacity-50 p-4 rounded-lg w-[300px]"
     >
     <h2 class="text-primary text-xl font-bold mb-2">{{ title }}</h2>
       <div v-for="skill in skills">
