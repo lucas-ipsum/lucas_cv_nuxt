@@ -1,9 +1,9 @@
 <template>
   <div class="mx-auto">
-    <h2 class="text-primary text-xl font-bold">{{ title }}</h2>
     <div
-      class="outline outline-2 outline-[#f5f5dc] p-4 rounded-lg w-full sm:w-[400px] mx-auto"
+      class="shadow-md bg-[#052e16] bg-opacity-50 p-4 rounded-lg w-full sm:w-[400px]"
     >
+    <h2 class="text-primary text-xl font-bold mb-2">{{ title }}</h2>
       <div v-for="skill in skills">
         <SkillElement :skill="skill" />
       </div>
