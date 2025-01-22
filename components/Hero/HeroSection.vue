@@ -1,6 +1,7 @@
 <template>
-    <div>
-        Hallo
+    <div class="grid">
+        <HeroImage />
+        <HeroText />
     </div>
 </template>
 
