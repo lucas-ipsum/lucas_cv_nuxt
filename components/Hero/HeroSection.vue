@@ -1,5 +1,5 @@
 <template>
-    <div class="grid">
+    <div class="grid grid-cols-2">
         <HeroImage />
         <HeroText />
     </div>
