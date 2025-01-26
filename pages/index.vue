@@ -1,12 +1,13 @@
 <template>
-    <div class="justify-center flex">
-        <div class="flex flex-col gap-10 xl:max-w-[56rem]">
-            <HeroSection />
-            <TimeLineSection />
-            <SkillSection />
+    <v-app>
+        <div class="justify-center flex">
+            <div class="flex flex-col gap-10 xl:max-w-[56rem]">
+                <HeroSection />
+                <TimeLineSection />
+                <SkillSection />
+            </div>
         </div>
-    </div>
-
+    </v-app>
 </template>
 
 <script lang="ts" setup>
