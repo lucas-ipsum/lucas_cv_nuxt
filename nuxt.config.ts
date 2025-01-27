@@ -24,7 +24,14 @@ export default defineNuxtConfig({
   },
   fontawesome: {
     icons: {
-      solid: ["circle", "building-columns", "calendar-days"],
+      solid: [
+        "circle",
+        "building-columns",
+        "calendar-days",
+        "briefcase",
+        "pencil",
+        "book",
+      ],
       regular: ["circle"],
     },
   },

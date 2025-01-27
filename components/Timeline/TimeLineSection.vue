@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <v-timeline v-for="experience in experincesData?.data" direction="horizontal" dot-color="red">
-        <TimelineTimlineElement :experience="experience"/>
+  <div id="timeline" class="">
+    <v-timeline class="overflow-x-scroll snap-x" direction="horizontal" line-color="#ffffff" dot-color="#ffffff">
+        <TimelineTimlineElement v-for="experience in experincesData?.data" :experience="experience"/>
     </v-timeline>
   </div>
-  {{ experincesData }}
 </template>
 
 <script setup lang="ts">
+import { scroll } from "motion"
 import type { Experience } from "./types"; // Import the interface
 
 
@@ -18,7 +18,12 @@ import type { Experience } from "./types"; // Import the interface
   // ### Events ###
   onMounted(() => {
     getData();
+    // scroll(callback, { container: document.getElementById("timeline") })
   });
+
+  const callback = () => {
+    console.log('scroll')
+  }
 
   // ### API Requests ###
   const getData = async () => {
