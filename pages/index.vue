@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <div class="justify-center flex">
-            <div class="flex flex-col gap-10 xl:max-w-[56rem]">
+            <div class="flex flex-col gap-10 max-w-[95%] xl:max-w-[56rem]">
                 <HeroSection />
                 <TimeLineSection />
                 <SkillSection />
