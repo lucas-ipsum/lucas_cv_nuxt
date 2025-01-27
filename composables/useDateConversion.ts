@@ -1,7 +1,9 @@
 import { format } from "date-fns";
+import { de } from "date-fns/locale";
 
 export const useDateConversion = (stringDate: string) => {
-  const date: Date = new Date(stringDate);
+    console.log(typeof stringDate)
+    const date: Date = new Date(stringDate);
 
-  return format(date, "MM/YY");
+  return format(date, "MMM yyyy", { locale: de });
 };

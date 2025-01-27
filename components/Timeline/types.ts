@@ -1,8 +1,8 @@
 export interface Experience {
     id: number;
     title: string;
-    startDate: Object;
-    endDate: Object;
+    startDate: string;
+    endDate: string;
     category: string;
     description: string;
     
