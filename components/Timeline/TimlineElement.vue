@@ -1,6 +1,6 @@
 <template>
   <v-timeline-item>
-    <template v-slot:opposite> Opposite content </template>
+    <!-- <template v-slot:opposite> Opposite content </template> -->
     <template v-slot:icon>
       <font-awesome
         class="text-primary bg-white p-3 outline outline-2 rounded-full"
