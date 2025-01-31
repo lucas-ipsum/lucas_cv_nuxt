@@ -1,6 +1,6 @@
 <template>
   <div id="timeline" class="">
-    <v-timeline class="overflow-x-scroll snap-x" direction="horizontal" line-color="#ffffff" dot-color="#ffffff">
+    <v-timeline class="overflow-x-scroll snap-x" :direction="xs ? 'vertical' : 'horizontal'" line-color="#ffffff" dot-color="#ffffff"   v-bind="xs ? { side: 'end' } : {}">
         <TimelineTimlineElement v-for="experience in experincesData?.data" :experience="experience"/>
     </v-timeline>
   </div>
@@ -8,9 +8,12 @@
 
 <script setup lang="ts">
 import { scroll } from "motion"
+import { useDisplay } from 'vuetify'
 import type { Experience } from "./types"; // Import the interface
 
+const { mobile, xs } = useDisplay() // vuetify display api checks if mobile devive
 
+// ## Strapi Backend Data logic ##
   const { find } = useStrapi();
   const experincesData = ref<{ data: Experience[] } | null>(null);
 
