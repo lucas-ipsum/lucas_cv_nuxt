@@ -9,17 +9,23 @@
       />
     </template>
     <div
-      class="flex flex-col gap-3 w-[220px] shadow-md bg-[#052e16] bg-opacity-50 p-4 rounded-lg text-white"
+      class="flex flex-col gap-3 w-[240px] shadow-md bg-[#052e16] bg-opacity-50 p-4 rounded-lg text-white"
     >
       <!-- Title -->
       <div class="text-xl font-bold text-primary">{{ experience.title }}</div>
       <!-- date -->
       <div class="flex gap-1 content-center">
         <font-awesome :icon="['fas', 'calendar-days']" size="xl"></font-awesome>
-        <span>{{ useDateConversion(experience.startDate) }}</span>
-        <span v-if="experience.endDate">
-          - {{ useDateConversion(experience.endDate) }}
-        </span>
+        <!-- change time display settings depending on category -->
+        <span
+          ><span
+            v-if="!experience.endDate && experience.category !== 'publications'"
+            >seit </span
+          >{{ useDateConversion(experience.startDate) }}
+          <span v-if="experience.endDate"
+            >- {{ useDateConversion(experience.endDate) }}
+          </span></span
+        >
       </div>
       <!-- institution -->
       <div class="flex gap-1 content-center">
