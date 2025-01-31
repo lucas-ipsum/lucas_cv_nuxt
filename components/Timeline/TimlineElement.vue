@@ -14,7 +14,7 @@
       <!-- Title -->
       <div class="text-xl font-bold text-primary">{{ experience.title }}</div>
       <!-- date -->
-      <div class="flex gap-1 content-center">
+      <div class="flex gap-2 items-center content-center">
         <font-awesome :icon="['fas', 'calendar-days']" size="xl"></font-awesome>
         <!-- change time display settings depending on category -->
         <span
@@ -28,7 +28,7 @@
         >
       </div>
       <!-- institution -->
-      <div class="flex gap-1 content-center">
+      <div class="flex gap-2 items-center content-center">
         <font-awesome
           :icon="['fas', 'building-columns']"
           size="xl"
