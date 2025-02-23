@@ -1,11 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
+  css: ["~/assets/css/main.css"],
   modules: [
     "@nuxtjs/strapi",
-    "@nuxtjs/tailwindcss",
     "@vesp/nuxt-fontawesome",
     (_options, nuxt) => {
       nuxt.hooks.hook("vite:extendConfig", (config) => {
@@ -42,6 +43,7 @@ export default defineNuxtConfig({
     transpile: ["vuetify"],
   },
   vite: {
+    plugins: [tailwindcss()],
     vue: {
       template: {
         transformAssetUrls,
