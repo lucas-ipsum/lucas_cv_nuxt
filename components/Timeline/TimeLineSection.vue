@@ -39,7 +39,7 @@
   // ### API Requests ###
   const getData = async () => {
     experincesData.value = await find("experiences", {
-      sort: "startDate:ASC",
+      sort: "startDate:desc",
     });
     // experincesData.value = response.data as Experience[];
   };
