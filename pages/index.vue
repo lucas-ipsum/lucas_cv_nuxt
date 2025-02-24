@@ -1,6 +1,7 @@
 <template>
     <div class="justify-center flex">
         <div class="xl:max-w-[56rem]">
+            <HeroSection />
             <SkillSection />
         </div>
     </div>
