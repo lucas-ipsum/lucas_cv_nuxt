@@ -1,5 +1,36 @@
-<template >
-  <div class="bg-gradient-to-b from-green-900 via-green-950 to-stone-900 min-h-screen py-5 sm:px-12">
-    <NuxtPage />
+<template>
+  <div class="dotted-background">
+    <div class="py-5 px-4 sm:px-12">
+      <NuxtPage />
+    </div>
   </div>
+
+
 </template>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevents all overflow */
+    box-sizing: border-box;
+    background: linear-gradient(
+      to bottom,
+      #14532d,
+      #052e16,
+      #1c1917
+    ); /* Adjust to match your color theme */
+  }
+  /* Dotted Background */
+  .dotted-background {
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    /* Gradient background */
+    /* Dotted pattern */
+    background-image: radial-gradient(circle, #ff007f 0.5px, transparent 1px); /* Dots */
+    background-size: 10px 10px; /* Adjust spacing between dots */
+  }
+</style>
