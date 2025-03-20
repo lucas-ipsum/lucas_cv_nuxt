@@ -1,14 +1,15 @@
 <template>
   <div class="font-semibold text-white">
-    <h1 id="heading-name" class="text-5xl">
-      <Transition name="slide-fade">
-        <span v-if="displayHeader">
-          <span class="text-primary">Hi, </span
-          ><span>ich bin Lucas.</span></span
-        >
-      </Transition>
-    </h1>
-    <h2 class="text-4xl pl-2">Web Developer und Umweltinformatiker</h2>
+    <Transition name="slide-fade">
+      <h1 v-if="displayHeader" class="text-5xl">
+        <span class="text-primary">Hi, </span><span>ich bin Lucas.</span>
+      </h1>
+    </Transition>
+    <Transition name="slide-fade">
+      <h2 v-if="displayHeader" class="text-4xl">
+        Web Developer und Umweltinformatiker
+      </h2>
+    </Transition>
   </div>
 </template>
 
@@ -33,15 +34,9 @@
     transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
   }
 
-  /* Define the initial state for entering */
-  .slide-fade-enter-from {
-    transform: translateX(-20px); /* Slide in from the left */
-    opacity: 0;
-  }
-
-  /* Define the final state for leaving */
+  .slide-fade-enter-from,
   .slide-fade-leave-to {
-    transform: translateX(20px); /* Slide out to the right */
+    transform: translateX(40px);
     opacity: 0;
   }
 </style>
