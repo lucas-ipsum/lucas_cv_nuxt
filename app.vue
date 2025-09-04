@@ -4,8 +4,6 @@
       <NuxtPage />
     </div>
   </div>
-
-
 </template>
 
 <style>
@@ -26,11 +24,17 @@
   }
   /* Dotted Background */
   .dotted-background {
-    height: 100vh; /* Full viewport height */
+    min-height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
     /* Gradient background */
     /* Dotted pattern */
-    background-image: radial-gradient(circle, #ff007f 0.5px, transparent 1px); /* Dots */
+    background-image: radial-gradient(
+      circle,
+      #ff007f 0.5px,
+      transparent 1px
+    ); /* Dots */
     background-size: 10px 10px; /* Adjust spacing between dots */
+    background-repeat: repeat; /* Ensures the pattern covers the entire area */
+    height: auto;
   }
 </style>
