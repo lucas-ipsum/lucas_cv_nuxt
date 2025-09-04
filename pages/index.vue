@@ -13,4 +13,9 @@
 <script lang="ts" setup>
 import SkillSection from '~/components/Skills/SkillSection.vue';
 import TimeLineSection from '~/components/Timeline/TimeLineSection.vue';
+
+  // page
+  useHead({
+    title: "Lucas CV",
+  });
 </script>

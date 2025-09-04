@@ -35,9 +35,8 @@
         ></font-awesome>
         <span>{{ experience.institution }}</span>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+      <p class="text-pretty">
+        {{ experience.description }}
       </p>
     </div>
   </v-timeline-item>
