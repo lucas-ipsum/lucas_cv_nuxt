@@ -1,5 +1,5 @@
 <template>
-  <div class="font-semibold text-white">
+  <div class="font-semibold text-center w-fit text-white">
     <Transition name="slide-fade">
       <h1 v-if="displayHeader" class="text-5xl">
         <span class="text-primary">Hi, </span><span>ich bin Lucas.</span>
