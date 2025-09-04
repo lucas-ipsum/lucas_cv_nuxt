@@ -3,7 +3,7 @@
     <!-- <template v-slot:opposite> Opposite content </template> -->
     <template v-slot:icon>
       <font-awesome
-        class="text-primary bg-white p-3 outline outline-2 rounded-full"
+        class="text-primary bg-white p-3 outline-2 rounded-full"
         :icon="getIcon(experience.category)"
         size="xl"
       />
@@ -35,9 +35,8 @@
         ></font-awesome>
         <span>{{ experience.institution }}</span>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+      <p class="text-pretty">
+        {{ experience.description }}
       </p>
     </div>
   </v-timeline-item>
